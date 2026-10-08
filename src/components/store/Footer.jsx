@@ -2,6 +2,7 @@ import React from 'react'
 import { FaHome } from "react-icons/fa";
 import { Button } from "@/components/ui/button"
 import { FaWhatsapp } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -36,11 +37,11 @@ const Footer = () => {
             <h2 className='mb-2 font-medium text-lg'>
                 Quick Links
             </h2>
-            <div className='text-gray-400'>
-            <p>Home</p>
-            <p>Shop</p>
-            <p>About</p>
-            <p>Contact</p>
+            <div className='text-gray-400 flex flex-col cursor-pointer'>
+            <Link to={'/'}>Home</Link>
+            <Link to={'/shop'}>Shop</Link>
+            <Link to={'/about'}>About</Link>
+            <Link to={'/contact'}>Contact</Link>
             </div>
           </div>
 
